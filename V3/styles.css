@@ -1,0 +1,137 @@
+@chrset "utf-8";
+/* Desktops and laptops ----------Demonstrate M5LO3-media queries to format a page differently for phones vs. PCs. */
+@media screen "min-width: 1224px)";
+    
+/*
+     The Audacious Australian Cattle Dog
+    Author: Jennifer Lindsey
+    Date:   July 20 2019
+	  Filename: styles.css
+	  Sources:  https://www.w3schools.com/ C1 jtc_layout.css
+
+   This file contains the layout styles used in the The AATC website
+
+*/
+/* 
+ Demonstrated M4LO2- used acdbg.jpg as background image
+*/
+ html 
+ body{background-image: url("acdbg.jpg");
+  }
+  
+  /* 
+ Demonstrated M4LO3 and M4LO4- used border radius (rounded corners) and gradients on all images
+*/ 
+ img {border-radius: 8px;
+ position: relative;
+ }
+ #grad {
+  background-image: linear-gradient(grey, silver, black);
+}
+ 
+ /* 
+ 
+*/
+ body {
+	 background-color: rgb(193, 176, 176); 
+     font-family: 'Comic Sans MS', cursive;
+	 margin-left: auto;
+	 margin-right: auto;
+	 max-width: 800px;
+	 min-width: 600px;
+     width: 90%;	
+	 -moz-box-shadow: rgba(192,192,192, 0.9) 20px 0px 25px,  rgba(192,192,192, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(169,169,169, 0.9) 20px 0px 25px,  rgba(169,169,169, 0.9) -20px 0px 25px;
+	box-shadow: rgba(119,136,153, 0.9) 20px 0px 25px,  rgba(119,136,153, 0.9) -20px 0px 25px;
+ }
+ 
+ /*Heading Styles 
+ 
+ */
+ h1 {
+	 color: black;
+	 background-color: rgb(152, 141, 141);
+	 width: 775px;
+     padding: 10px;
+     border: 5px solid gray;
+     	 position: relative;
+	 
+	 
+ }
+ /*Demonstrated M4LO5- used text shadowing for all headers 
+  */
+ h1 {
+  text-shadow: 2px 2px;
+  } 
+ /*
+   */
+ div {
+	 width: 775px;
+  padding: 10px;
+  border: 5px solid gray;
+   	 color: black;
+	 background-color: rgb(192,192,192);
+	 position: relative;
+	}
+	/*Demonstrated M4LO6- use of opacity/transparency and hover on all images 
+ 
+ */
+ /* Demonstrated M4LO8-use of transformation on 2D or 3D images- via transform:rotate all images */
+ 
+ 	img:hover{
+	 opacity: 0.7;
+     filter: alpha(opacity=50);
+	 transform: rotate(20deg);
+}
+ 
+ 
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/*Demonstrated M6LO7- table formatted with CSS for theacdbreed.html page 
+ 
+ */
+table, th, td {
+  border: 1px solid black;
+      height: 50px;
+  vertical-align: bottom;
+}
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+/*Demonstrated M5LO6 and M5LO7- use of flexbox containers and items on acdresources.html  
+ 
+ */
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+ img {
+  float: none;
+}
+.clearfix {
+  overflow: auto;
+}
